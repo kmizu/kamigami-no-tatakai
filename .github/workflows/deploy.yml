@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - main
-      - master
   # 手動実行も可能に
   workflow_dispatch:
 

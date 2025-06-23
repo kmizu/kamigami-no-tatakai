@@ -1,0 +1,88 @@
+site_name: 神々の闘い
+site_description: ヤハウェと弥勒菩薩が救済を巡って激突する神話バトルライトノベル
+site_author: 作者名
+site_url: https://example.com
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      lang: ja
+  - awesome-pages
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+nav:
+  - ホーム: index.md
+  - 登場人物: characters.md
+  - 第1部 邂逅編:
+    - 第1話 終末の予兆: part1/chapter01.md
+    - 第2話 ヤハウェの降臨: part1/chapter02.md
+    - 第3話 弥勒菩薩の顕現: part1/chapter03.md
+    - 第4話 初めての遭遇: part1/chapter04.md
+    - 第5話 人間たちの選択: part1/chapter05.md
+    - 第6話 思想の衝突: part1/chapter06.md
+    - 第7話 宣戦布告: part1/chapter07.md
+  - 第2部 激論編:
+    - 第8話 第一の議論: part2/chapter08.md
+    - 第9話 第二の議論: part2/chapter09.md
+    - 第10話 第三の議論: part2/chapter10.md
+    - 第11話 人間界の混乱: part2/chapter11.md
+    - 第12話 使徒たちの参戦: part2/chapter12.md
+    - 第13話 哲学バトル: part2/chapter13.md
+    - 第14話 決裂: part2/chapter14.md
+  - 第3部 決戦編:
+    - 第15話 最終決戦への準備: part3/chapter15.md
+    - 第16話 神々の真の姿: part3/chapter16.md
+    - 第17話 激闘: part3/chapter17.md
+    - 第18話 人間の介入: part3/chapter18.md
+    - 第19話 終末の真実: part3/chapter19.md
+    - 第20話 新世界の夜明け: part3/chapter20.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/example
+    - icon: fontawesome/brands/github
+      link: https://github.com/example
+
+copyright: Copyright &copy; 2024 - 神々の闘い
